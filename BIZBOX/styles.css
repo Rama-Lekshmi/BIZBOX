@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6e6fa; /* Lavender background */
+    color: #4b0082; /* Dark purple text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #9370db !important; /* Medium purple */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #d8bfd8; /* Thistle */
+    padding: 100px 0;
+}
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: #4b0082; /* Dark purple */
+}
+
+.card-text {
+    color: #6a5acd; /* Slate blue */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #9370db; /* Medium purple */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #7b68ee; /* Medium slate blue */
+}
+
+/* Footer */
+footer {
+    background-color: #9370db; /* Medium purple */
+}

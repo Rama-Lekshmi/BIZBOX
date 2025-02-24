@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - BIZBOX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BIZBOX</a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Expense Tracker</h1>
+        <form id="expenseForm">
+            <div class="mb-3">
+                <label for="expenseName" class="form-label">Expense Name</label>
+                <input type="text" class="form-control" id="expenseName" required>
+            </div>
+            <div class="mb-3">
+                <label for="expenseAmount" class="form-label">Amount ($)</label>
+                <input type="number" class="form-control" id="expenseAmount" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Expense</button>
+        </form>
+
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount ($)</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('expenseForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const expenseName = document.getElementById('expenseName').value;
+            const expenseAmount = document.getElementById('expenseAmount').value;
+
+            const table = document.getElementById('expenseTable');
+            const row = table.insertRow();
+            row.innerHTML = `<td>${expenseName}</td><td>${expenseAmount}</td>`;
+
+            document.getElementById('expenseForm').reset();
+        });
+    </script>
+</body>
+</html>
