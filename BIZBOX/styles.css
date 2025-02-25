@@ -1,11 +1,11 @@
-/* General Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #e6e6fa; /* Lavender background */
     color: #4b0082; /* Dark purple text */
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #9370db !important; /* Medium purple */
 }
@@ -14,13 +14,13 @@ body {
     color: #fff !important;
 }
 
-/* Hero Section */
+
 .hero-section {
     background-color: #d8bfd8; /* Thistle */
     padding: 100px 0;
 }
 
-/* Cards */
+
 .card {
     background-color: #fff;
     border: none;
@@ -34,25 +34,24 @@ body {
 }
 
 .card-title {
-    color: #4b0082; /* Dark purple */
+    color: #4b0082; 
 }
 
 .card-text {
-    color: #6a5acd; /* Slate blue */
+    color: #6a5acd; 
 }
 
 /* Buttons */
 .btn-primary {
-    background-color: #9370db; /* Medium purple */
+    background-color: #9370db; 
     border: none;
     transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #7b68ee; /* Medium slate blue */
-}
+    background-color: #7b68ee; 
 
 /* Footer */
 footer {
-    background-color: #9370db; /* Medium purple */
+    background-color: #9370db;
 }
